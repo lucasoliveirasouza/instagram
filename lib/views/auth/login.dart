@@ -96,10 +96,10 @@ class _LoginViewState extends State<LoginView> {
                     ),
                   ),
                   Text(
-                    " Obtenha ajuda para entrar",
+                    " Obtenha ajuda para entrar.",
                     style: TextStyle(
                         fontSize: 12,
-                        color: Colors.grey.shade600,
+                        color: Color(0XFF385185),
                         fontWeight: FontWeight.bold),
                   ),
                 ],
@@ -144,11 +144,12 @@ class _LoginViewState extends State<LoginView> {
                     ),
                   ),
                   Text(
-                    " Cadastre-se",
+                    " Cadastre-se.",
                     style: TextStyle(
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
-                      color: Colors.grey.shade600,
+                      color: Color(0XFF385185),
+
                     ),
                   ),
                 ],
