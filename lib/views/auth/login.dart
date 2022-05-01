@@ -32,7 +32,7 @@ class _LoginViewState extends State<LoginView> {
               child: Image.asset("assets/images/instagram.png"),
             ),
             Container(
-              color: Colors.grey.shade200,
+              color: Colors.grey.shade100,
               height: 48,
               child: TextFormField(
                 keyboardType: TextInputType.text,
@@ -53,7 +53,7 @@ class _LoginViewState extends State<LoginView> {
               height: 15,
             ),
             Container(
-              color: Colors.grey.shade200,
+              color: Colors.grey.shade100,
               height: 48,
               child: TextFormField(
                 keyboardType: TextInputType.text,
