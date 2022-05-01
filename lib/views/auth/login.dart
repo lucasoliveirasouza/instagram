@@ -83,9 +83,6 @@ class _LoginViewState extends State<LoginView> {
                 child: Text("Entrar"),
               ),
             ),
-            SizedBox(
-              height: 15,
-            ),
             Container(
               padding: EdgeInsets.only(
                 left: 5,
@@ -101,7 +98,10 @@ class _LoginViewState extends State<LoginView> {
                   ),
                   TextButton(
                     onPressed: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => ObtenhaAjudaView()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => ObtenhaAjudaView()));
                     },
                     child: Text(
                       "Obtenha ajuda para entrar.",
@@ -114,9 +114,6 @@ class _LoginViewState extends State<LoginView> {
                   ),
                 ],
               ),
-            ),
-            SizedBox(
-              height: 12,
             ),
             Divider(
               color: Colors.grey,
@@ -132,7 +129,7 @@ class _LoginViewState extends State<LoginView> {
               ),
             ),
             SizedBox(
-              height: 120,
+              height: 110,
             ),
             Divider(
               color: Colors.grey,
