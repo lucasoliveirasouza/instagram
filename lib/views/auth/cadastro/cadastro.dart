@@ -70,7 +70,7 @@ class _CadastroViewState extends State<CadastroView> {
               height: 48,
               child: ElevatedButton(
                 onPressed: () {},
-                child: Text("Entrar"),
+                child: Text("Avançar"),
               ),
             ),
           ],
