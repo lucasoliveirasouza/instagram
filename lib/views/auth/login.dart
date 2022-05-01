@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/views/auth/ajuda/obtenha_ajuda.dart';
 import 'package:instagram/views/auth/cadastro/cadastro.dart';
 
 class LoginView extends StatefulWidget {
@@ -40,6 +41,7 @@ class _LoginViewState extends State<LoginView> {
                   hintText: "Número de telefone, email ou nome de usuário",
                   hintStyle: TextStyle(
                     fontSize: 14,
+                    color: Colors.grey.shade500,
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
@@ -61,6 +63,7 @@ class _LoginViewState extends State<LoginView> {
                   hintText: "Senha",
                   hintStyle: TextStyle(
                     fontSize: 14,
+                    color: Colors.grey.shade500,
                   ),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
@@ -85,7 +88,7 @@ class _LoginViewState extends State<LoginView> {
             ),
             Container(
               padding: EdgeInsets.only(
-                left: 10,
+                left: 5,
               ),
               child: Row(
                 children: [
@@ -96,12 +99,18 @@ class _LoginViewState extends State<LoginView> {
                       color: Colors.grey.shade600,
                     ),
                   ),
-                  Text(
-                    " Obtenha ajuda para entrar.",
-                    style: TextStyle(
+                  TextButton(
+                    onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => ObtenhaAjudaView()));
+                    },
+                    child: Text(
+                      "Obtenha ajuda para entrar.",
+                      style: TextStyle(
                         fontSize: 12,
                         color: Color(0XFF385185),
-                        fontWeight: FontWeight.bold),
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
                 ],
               ),
