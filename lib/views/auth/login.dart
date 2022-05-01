@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/views/auth/cadastro/cadastro.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -127,9 +128,6 @@ class _LoginViewState extends State<LoginView> {
             Divider(
               color: Colors.grey,
             ),
-            SizedBox(
-              height: 10,
-            ),
             Container(
               padding: EdgeInsets.only(
                 left: 70,
@@ -143,15 +141,22 @@ class _LoginViewState extends State<LoginView> {
                       color: Colors.grey.shade600,
                     ),
                   ),
-                  Text(
-                    " Cadastre-se.",
-                    style: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.bold,
-                      color: Color(0XFF385185),
-
+                  TextButton(
+                    onPressed: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => CadastroView()));
+                    },
+                    child: Text(
+                      " Cadastre-se.",
+                      style: TextStyle(
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0XFF385185),
+                      ),
                     ),
-                  ),
+                  )
                 ],
               ),
             )
