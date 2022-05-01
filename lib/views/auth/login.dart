@@ -149,7 +149,7 @@ class _LoginViewState extends State<LoginView> {
                               builder: (context) => CadastroView()));
                     },
                     child: Text(
-                      " Cadastre-se.",
+                      "Cadastre-se.",
                       style: TextStyle(
                         fontSize: 12,
                         fontWeight: FontWeight.bold,
