@@ -43,31 +43,55 @@ class _MenuViewState extends State<MenuView> {
           BottomNavigationBarItem(
             icon: Image.asset(
               "assets/images/home.png",
-              width: 20,
-              height: 20,
+              width: 23,
+              height: 23,
             ),
             activeIcon: Image.asset(
               "assets/images/homepage.png",
-              width: 20,
-              height: 20,
+              width: 23,
+              height: 23,
             ),
             label: "",
           ),
           BottomNavigationBarItem(
             icon: Image.asset(
-              "assets/images/home.png",
-              width: 20,
-              height: 20,
+              "assets/images/search.png",
+              width: 23,
+              height: 23,
             ),
             activeIcon: Image.asset(
-              "assets/images/homepage.png",
-              width: 20,
-              height: 20,
+              "assets/images/searchclick.png",
+              width: 23,
+              height: 23,
             ),
             label: "",
           ),
-          BottomNavigationBarItem(icon: Icon(Icons.movie), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.shopping_bag), label: ""),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              "assets/images/reels.png",
+              width: 23,
+              height: 23,
+            ),
+            activeIcon: Image.asset(
+              "assets/images/reelsclick.png",
+              width: 23,
+              height: 23,
+            ),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              "assets/images/loja.png",
+              width: 23,
+              height: 23,
+            ),
+            activeIcon: Image.asset(
+              "assets/images/lojaclick.png",
+              width: 23,
+              height: 23,
+            ),
+            label: "",
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: ""),
         ],
       ),
