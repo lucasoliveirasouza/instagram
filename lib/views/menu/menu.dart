@@ -35,14 +35,15 @@ class _MenuViewState extends State<MenuView> {
       body: _telas[_pagina],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         currentIndex: _pagina,
         onTap: mudarAba,
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.text_snippet_outlined), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.movie), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.shopping_bag), label: ""),
           BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: ""),
         ],
       ),
