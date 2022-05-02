@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram/views/auth/ajuda/obtenha_ajuda.dart';
 import 'package:instagram/views/auth/cadastro/cadastro.dart';
+import 'package:instagram/views/menu/menu.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({Key? key}) : super(key: key);
@@ -79,7 +80,10 @@ class _LoginViewState extends State<LoginView> {
             Container(
               height: 48,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => MenuView()));
+                },
                 child: Text("Entrar"),
               ),
             ),
