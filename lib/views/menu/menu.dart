@@ -40,8 +40,32 @@ class _MenuViewState extends State<MenuView> {
         currentIndex: _pagina,
         onTap: mudarAba,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              "assets/images/home.png",
+              width: 20,
+              height: 20,
+            ),
+            activeIcon: Image.asset(
+              "assets/images/homepage.png",
+              width: 20,
+              height: 20,
+            ),
+            label: "",
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset(
+              "assets/images/home.png",
+              width: 20,
+              height: 20,
+            ),
+            activeIcon: Image.asset(
+              "assets/images/homepage.png",
+              width: 20,
+              height: 20,
+            ),
+            label: "",
+          ),
           BottomNavigationBarItem(icon: Icon(Icons.movie), label: ""),
           BottomNavigationBarItem(icon: Icon(Icons.shopping_bag), label: ""),
           BottomNavigationBarItem(icon: Icon(Icons.account_circle), label: ""),
